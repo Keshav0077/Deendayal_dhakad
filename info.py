@@ -38,7 +38,7 @@ PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002469938780')) # add premium 
 auth_channel = environ.get('AUTH_CHANNEL', '-1002031329869') #Channel / Group Id for force sub ( make sure bot is admin )
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002474691060').split()]
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002491588102') # support group id ( make sure bot is admin )
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002031329869') # request channel id ( make sure bot is admin ).
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002488086781') # request channel id ( make sure bot is admin ).
 
 
 # MongoDB information
@@ -67,10 +67,10 @@ TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Deenu_dhakad') # Tutorial video
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 
 #Channel & Group link 
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/moviebazaar7')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/New_movie_bazaar7')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/moviesearch6')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+dLXyYxTK6BpkMzc1')
 OWNER_LNK = environ.get('OWNER_LNK', 't.me/Singhje')
-DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK = environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/New_movie_bazaar7')
+DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK = environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/+dLXyYxTK6BpkMzc1')
 
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
